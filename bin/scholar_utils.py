@@ -3,11 +3,13 @@
 
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 from typing import Any
 
 import yaml
+from scholarly import ProxyGenerator, scholarly
 
 CONFIG_PATH = Path("_data/socials.yml")
 
@@ -36,3 +38,37 @@ def load_scholar_user_id(config_path: str | Path = CONFIG_PATH) -> str:
         sys.exit(1)
 
     return scholar_user_id
+
+
+def configure_scholarly_session() -> None:
+    """Configure scholarly to use the most reliable proxy available."""
+    pg = ProxyGenerator()
+
+    serpapi_key = os.environ.get("SERPAPI_API_KEY") or os.environ.get("SERPAPI_KEY")
+    ci_env = os.environ.get("CI") == "true"
+    if serpapi_key:
+        try:
+            if pg.SerpAPI(serpapi_key):
+                scholarly.use_proxy(pg)
+                print("Using SerpAPI for Google Scholar requests.")
+                return
+            print("Warning: Unable to initialize SerpAPI proxy. Falling back to free proxies.")
+        except Exception as exc:  # noqa: BLE001
+            print(f"Warning: SerpAPI proxy configuration failed: {exc}. Falling back to free proxies.")
+
+    if not ci_env:
+        print("CI environment not detected; using direct Google Scholar connection.")
+        return
+
+    try:
+        if pg.FreeProxies():
+            scholarly.use_proxy(pg)
+            print("Using rotating free proxies for Google Scholar requests.")
+            return
+        print("Warning: Unable to obtain a free proxy. Proceeding without proxy support.")
+    except Exception as exc:  # noqa: BLE001
+        print(f"Warning: Free proxy configuration failed: {exc}. Proceeding without proxy support.")
+
+    print(
+        "Continuing without any Google Scholar proxy. Set SERPAPI_API_KEY as a repository secret if remote runs keep failing."
+    )

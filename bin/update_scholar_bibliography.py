@@ -12,7 +12,7 @@ from typing import Dict, Iterable, List, Set, Tuple
 
 from scholarly import scholarly
 
-from scholar_utils import load_scholar_user_id
+from scholar_utils import configure_scholarly_session, load_scholar_user_id
 
 BIBLIO_FILE = Path("_bibliography/papers.bib")
 MANUAL_FILE = Path("_bibliography/manual_overrides.bib")
@@ -181,6 +181,7 @@ def write_bibtex(entries: List[str], scholar_id: str, manual_text: str) -> None:
 
 
 def main() -> None:
+    configure_scholarly_session()
     scholar_id = load_scholar_user_id()
     publications = fetch_publications(scholar_id)
 

@@ -7,7 +7,7 @@ from datetime import datetime
 import yaml
 from scholarly import scholarly
 
-from scholar_utils import load_scholar_user_id
+from scholar_utils import configure_scholarly_session, load_scholar_user_id
 
 
 SCHOLAR_USER_ID: str = load_scholar_user_id()
@@ -16,6 +16,7 @@ OUTPUT_FILE: str = "_data/citations.yml"
 
 def get_scholar_citations() -> None:
     """Fetch and update Google Scholar citation data."""
+    configure_scholarly_session()
     print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
     today = datetime.now().strftime("%Y-%m-%d")
     existing_data = None
