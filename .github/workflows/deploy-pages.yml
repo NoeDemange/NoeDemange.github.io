@@ -3,6 +3,13 @@ name: Deploy Jekyll Site
 on:
   push:
     branches: ["main"]
+  workflow_run:
+    workflows:
+      - Sync Scholar Publications
+      - Sync Scholar Citations
+      - Sync Repository Metadata
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
@@ -16,6 +23,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     env:
       JEKYLL_ENV: production
