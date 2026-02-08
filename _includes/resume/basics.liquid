@@ -1,5 +1,9 @@
 <table class="table table-cv table-sm table-borderless table-responsive table-cv-map">
   {% assign skip_basics = 'image,profiles,location' | split: ',' %}
+  {% assign basics_locales = site.data.resume_field_titles.basics %}
+  {% assign basics_locale = include.resume_locale | default: page.lang | default: site.lang %}
+  {% assign basics_locale = basics_locale | split: '-' | first %}
+  {% assign basics_label_map = basics_locales[basics_locale] %}
   {% for content in data[1] %}
     {%
       if (content[1] == "") or (skip_basics contains
@@ -10,7 +14,12 @@
 
     <tr>
       <td class="p-1 pr-2 font-weight-bold">
-        <b>{{ content[0] | capitalize }}</b>
+        {% assign field_key = content[0] | downcase %}
+        {% assign field_label = content[0] | capitalize %}
+        {% if basics_label_map and basics_label_map[field_key] %}
+          {% assign field_label = basics_label_map[field_key] %}
+        {% endif %}
+        <b>{{ field_label }}</b>
       </td>
       <td class="p-1 pl-2 font-weight-light text">
         {% if content[0] == 'url' %}

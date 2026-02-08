@@ -1,0 +1,201 @@
+{
+  "basics": {
+    "name": "Noé Demange",
+    "label": "Doctorant en informatique",
+    "image": "",
+    "email": "noe.demange@uvsq.fr",
+    "phone": "",
+    "url": "",
+    "summary": "Doctorant au laboratoire DAVID (UVSQ / Université Paris-Saclay) travaillant sur des algorithmes pour la génération de cages moléculaires organiques."
+  },
+  "work": [
+    {
+      "name": "Laboratoire DAVID, UVSQ / Université Paris-Saclay",
+      "position": "Doctorant",
+      "url": "https://www.uvsq.fr/david",
+      "startDate": "2024-10-01",
+      "summary": "Recherche doctorale sur la génération de chemins entre motifs liants pour guider la synthèse de cages moléculaires, sous la direction de Yann Strozecki et Sandrine Vial.",
+      "highlights": []
+    },
+    {
+      "name": "Laboratoire DAVID, UVSQ",
+      "position": "Stagiaire de recherche (M2)",
+      "startDate": "2024-04-01",
+      "endDate": "2024-09-30",
+      "summary": "Développement d'algorithmes en C pour générer des cages moléculaires in silico et construire des chemins de synthèse réalistes.",
+      "highlights": []
+    },
+    {
+      "name": "UVSQ - SaclAI School",
+      "position": "Tuteur académique",
+      "startDate": "2024-03-01",
+      "endDate": "2024-06-30",
+      "summary": "Accompagnement des étudiants de licence informatique sur la programmation, l'algorithmique et la préparation aux examens.",
+      "highlights": []
+    },
+    {
+      "name": "Laboratoire DAVID, UVSQ",
+      "position": "Stagiaire de recherche",
+      "startDate": "2023-06-01",
+      "endDate": "2023-07-31",
+      "summary": "Amélioration d'une chaîne de construction de cages moléculaires et implémentation de l'algorithme A* en C.",
+      "highlights": []
+    },
+    {
+      "name": "Université Paris-Saclay",
+      "position": "Étudiant ambassadeur",
+      "startDate": "2022-09-01",
+      "endDate": "2024-06-30",
+      "summary": "Promotion de l'offre de formation lors de salons et d'événements d'orientation.",
+      "highlights": []
+    },
+    {
+      "name": "CHCSC, UVSQ",
+      "position": "Ingénieur de recherche indépendant",
+      "startDate": "2022-04-01",
+      "endDate": "2022-05-31",
+      "summary": "Création de scripts d'analyse en R, de tableaux de bord Shiny et d'environnements Docker pour des études en histoire culturelle.",
+      "highlights": [ ]
+    },
+    {
+      "name": "CHCSC, UVSQ",
+      "position": "Stagiaire de recherche",
+      "startDate": "2022-06-01",
+      "endDate": "2022-08-31",
+      "summary": "Conception d'une méthode de double sériation pour l'analyse de grands jeux de données historiques en R.",
+      "highlights": []
+    },
+    {
+      "name": "Atelier de Bioinformatique, ISYEB - MNHN",
+      "position": "Stagiaire de recherche",
+      "startDate": "2021-09-01",
+      "endDate": "2022-02-28",
+      "summary": "Développement et application d'une approche de double sériation sur des données génomiques sous la supervision de Guillaume Sapriel.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Laboratoire DAVID, UVSQ",
+      "position": "Représentant des doctorants",
+      "startDate": "2025-01-01",
+      "summary": ""
+    },
+    {
+      "organization": "Junior Conference on Informatics: Theory and Applications (JITA)",
+      "position": "Membre du comité junior",
+      "startDate": "2025-01-01",
+      "summary": "Organisation de la conférence étudiante, communication et relectures scientifiques."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Université Paris-Saclay / UVSQ",
+      "area": "Informatique",
+      "studyType": "Doctorat",
+      "startDate": "2024-10-01",
+      "endDate": "",
+      "score": "",
+      "courses": [
+        "Algorithmes pour les cages moléculaires",
+        "Théorie des graphes appliquée à la chimie"
+      ]
+    },
+    {
+      "institution": "Université Paris-Saclay",
+      "area": "Master AMIS (Algorithmique et Modélisation à l'Interface des Sciences)",
+      "studyType": "Master",
+      "startDate": "2022-09-01",
+      "endDate": "2024-06-30",
+      "score": "Mention très bien, bourse MixtAI",
+      "courses": [
+        "Modélisation moléculaire",
+        "Théorie des graphes",
+        "Intelligence artificielle",
+        "Optimisation combinatoire"
+      ]
+    },
+    {
+      "institution": "Université de Versailles Saint-Quentin-en-Yvelines",
+      "area": "Double licence Biologie & Informatique",
+      "studyType": "Licence",
+      "startDate": "2019-09-01",
+      "endDate": "2022-06-30",
+      "score": "Mention très bien",
+      "courses": [
+        "Algorithmique (C, Java)",
+        "Bases de données et cryptographie",
+        "Génétique et biologie moléculaire"
+      ]
+    },
+    {
+      "institution": "Lycée de la Haie Griselle",
+      "area": "Baccalauréat scientifique (spécialité SVT)",
+      "studyType": "Baccalauréat",
+      "startDate": "2016-09-01",
+      "endDate": "2019-06-30",
+      "score": "Mention très bien"
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [
+    {
+      "title": "Posters",
+      "entries": [
+        {
+          "name": "Symposium MaDICS",
+          "publisher": "Symposium MaDICS",
+          "releaseDate": "2025-06-01",
+          "summary": "Poster sur la génération de guides de construction pour les cages moléculaires."
+        },
+        {
+          "name": "Journées de la recherche UPSaclay",
+          "publisher": "Journées de la recherche UPSaclay",
+          "releaseDate": "2025-05-01",
+          "summary": "Poster sur la génération de guides de construction pour les cages moléculaires."
+        }
+      ]
+    },
+    {
+      "title": "Présentations",
+      "entries": [
+        {
+          "name": "Journée des doctorants du laboratoire DAVID",
+          "publisher": "Laboratoire DAVID",
+          "releaseDate": "2024-11-01",
+          "summary": "Présentation orale sur les premiers résultats liés aux algorithmes pour la synthèse de cages."
+        }
+      ]
+    }
+  ],
+  "skills": [],
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Comparaison de graphes de cycles moléculaires",
+      "summary": "Construction et comparaison de graphes de cycles par MCIS (C/Python/R, projet de M2 en équipe de quatre).",
+      "highlights": [],
+      "startDate": "2023-10-01",
+      "endDate": "2024-02-29"
+    },
+    {
+      "name": "Guides de construction de cages moléculaires",
+      "summary": "Extension d'un code existant pour proposer de nouvelles stratégies de construction de chemins entre motifs (projet de M1).",
+      "highlights": [],
+      "startDate": "2023-01-01",
+      "endDate": "2023-05-31"
+    },
+    {
+      "name": "Prédiction de structures ARN avec pseudonœuds",
+      "summary": "Implémentation de l'algorithme de Rivas & Eddy en C pour prédire des structures secondaires d'ARN (projet de L3).",
+      "highlights": [
+        "Travail collaboratif en équipe de quatre"
+      ],
+      "startDate": "2022-01-01",
+      "endDate": "2022-05-31"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+- title: Foundations of Computer Science II – Python Programming
+  type: map
+  contents:
+    - name: Level / Year
+      value: Undergraduate (L1) — 2026
+    - name: Course content
+      value: 
+    - name: Coordinator
+      value: Mustapha Lebbah
+
+- title: Algorithms and Foundations for Data Science
+  type: map
+  contents:
+    - name: Level / Year
+      value: Undergraduate (L3) — 2026
+    - name: Course content
+      value: Statistics, Clustering, PCA
+    - name: Coordinator
+      value: Sandrine Vial
+
+- title: Models of Computation and Complexity
+  type: map
+  contents:
+    - name: Level / Year
+      value: Undergraduate (L3) — 2025
+    - name: Course content
+      value: Pushdown automaton, Turing machine, other computational models, decidability, reduction, complexity classes
+    - name: Coordinator
+      value: Yann Strozecki
+
+- title: Data Structures and Algorithms
+  type: map
+  contents:
+    - name: Level / Year
+      value: Undergraduate (L2) — 2024
+    - name: Course content
+      value: Recursion, sorting, stacks/queues, trees, algorithms, and complexity
+    - name: Coordinator
+      value: Sandrine Vial

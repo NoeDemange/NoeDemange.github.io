@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ page.title }}
+      {% if page.teaching_pdf %}
+        <a
+          {% if page.teaching_pdf contains '://' %}
+            href="{{ page.teaching_pdf }}"
+          {% else %}
+            href="{{ page.teaching_pdf | prepend: 'assets/pdf/' | relative_url }}"
+          {% endif %}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="float-right"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      {% endif %}
+    </h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="cv">
+      {% assign teaching_entries = site.data.teaching | default: site.data.teaching_en %}
+      {% if page.teaching_data %}
+        {% assign data_key = page.teaching_data %}
+        {% if data_key contains '/' %}
+          {% assign data_key = data_key | split: '/' | last %}
+        {% endif %}
+        {% if data_key contains '.' %}
+          {% assign data_key = data_key | split: '.' | first %}
+        {% endif %}
+        {% assign candidate = site.data[data_key] %}
+        {% if candidate %}
+          {% assign teaching_entries = candidate %}
+        {% endif %}
+      {% endif %}
+
+      {% if teaching_entries %}
+        {% for entry in teaching_entries %}
+          <a class="anchor" id="{{ entry.title }}"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+            <div>
+              {% if entry.type == 'list' %}
+                {% include cv/list.liquid %}
+              {% elsif entry.type == 'map' %}
+                {% include cv/map.liquid %}
+              {% elsif entry.type == 'nested_list' %}
+                {% include cv/nested_list.liquid %}
+              {% elsif entry.type == 'time_table' %}
+                {% include cv/time_table.liquid %}
+              {% elsif entry.type == 'list_groups' %}
+                {% include cv/list_groups.liquid %}
+              {% else %}
+                {{ entry.contents }}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </article>
+</div>

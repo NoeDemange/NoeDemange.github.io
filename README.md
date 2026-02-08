@@ -316,7 +316,9 @@ You can create a people page if you want to feature more than one person. Each p
 
 ### Publications
 
-Your publications' page is generated automatically from your BibTex bibliography. Simply edit [\_bibliography/papers.bib](_bibliography/papers.bib). You can also add new `*.bib` files and customize the look of your publications however you like by editing [\_pages/publications.md](_pages/publications.md). By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
+If you keep Google Scholar up to date, run `python bin/update_scholar_bibliography.py` to regenerate `_bibliography/papers.bib` directly from your Scholar profile (the script uses the `scholar_userid` defined in `_data/socials.yml`). Keep any hand-tuned entries or field overrides in `_bibliography/manual_overrides.bib`; each time the script runs it merges that file into `papers.bib`, overriding matching keys and appending any manual-only entries so Jekyll can continue reading a single bibliography. Remember to rerun the script after editing `manual_overrides.bib` to propagate your changes.
+
+Your publications' page is generated automatically from your BibTex bibliography. Simply edit [_bibliography/papers.bib](_bibliography/papers.bib). You can also add new `*.bib` files and customize the look of your publications however you like by editing [_pages/publications.md](_pages/publications.md). By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [_config.yml](_config.yml) file.
 
 You can add extra information to a publication, like a PDF file in the [assets/pdf/](assets/pdf/) directory and add the path to the PDF file in the BibTeX entry with the `pdf` field. Some of the supported fields are: `abstract`, `altmetric`, `arxiv`, `bibtex_show`, `blog`, `code`, `dimensions`, `doi`, `eprint`, `html`, `isbn`, `pdf`, `pmid`, `poster`, `slides`, `supp`, `video`, and `website`.
 
@@ -376,6 +378,8 @@ Photo formatting is made simple using [Bootstrap's grid system](https://getboots
 [![Repositories Preview](readme_preview/repositories.png)](https://alshedivat.github.io/al-folio/repositories/)
 
 Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories to the `/repositories/` page.
+
+You can auto-populate repository descriptions and keywords by exporting a fine-grained `GITHUB_TOKEN` and running `python bin/update_repositories.py`. The script looks at the `github_repos` list, fetches the latest metadata from the GitHub API, and stores it under `github_repos_metadata` so the `/repositories/` page stays in sync without hand-editing YAML.
 
 You may also use the following codes for displaying this in any other pages.
 

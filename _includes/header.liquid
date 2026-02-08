@@ -42,15 +42,25 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+          {% assign current_lang = page.lang | default: site.lang %}
+          {% assign languages_map = site.data.languages %}
+          {% assign root_permalink = '/' %}
+          {% if languages_map and languages_map[current_lang] and languages_map[current_lang].url %}
+            {% assign root_permalink = languages_map[current_lang].url %}
+          {% endif %}
+          {% assign about_title = site.title %}
+          {% for p_about in site.pages %}
+            {% if p_about.permalink == root_permalink %}
+              {% assign about_title = p_about.title %}
+              {% break %}
+            {% endif %}
           {% endfor %}
 
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+          <li class="nav-item {% if page.permalink == root_permalink %}active{% endif %}">
+            <a class="nav-link" href="{{ root_permalink | relative_url }}">
               {{- about_title }}
-              {% if page.permalink == '/' %}
+              {% if page.permalink == root_permalink %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -59,6 +69,10 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
+            {% assign nav_lang = p.lang | default: '' %}
+            {% if nav_lang != '' and nav_lang != current_lang %}
+              {% continue %}
+            {% endif %}
             {% if p.nav and p.autogen == null %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
@@ -117,6 +131,19 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          {% if page.alternate_url %}
+            {% assign current_lang = page.lang | default: site.lang %}
+            {% if current_lang == 'fr' %}
+              {% assign switch_lang = 'EN' %}
+              {% assign switch_flag = '🇺🇸/🇬🇧' %}
+            {% else %}
+              {% assign switch_lang = 'FR' %}
+              {% assign switch_flag = '🇫🇷' %}
+            {% endif %}
+            <li class="nav-item lang-switch">
+              <a class="nav-link" href="{{ page.alternate_url | relative_url }}">{{ switch_flag }} {{ switch_lang }}</a>
+            </li>
+          {% endif %}
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

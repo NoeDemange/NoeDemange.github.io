@@ -1,14 +1,126 @@
 github_users:
-  - torvalds
-  - alshedivat
-
+- NoeDemange
 repo_description_lines_max: 2
-
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+- NoeDemange/MolecularCagesGeneration
+- NoeDemange/Cage-Moleculaire
+- NoeDemange/M2AmisProjet-GrapheDeCycles
+- NoeDemange/OrderedHeatMapAnalysis
+- NoeDemange/NSPCAview
+- NoeDemange/labelcolor
+- NoeDemange/DSMapR
+- NoeDemange/SeriClustR
+github_repos_metadata:
+- slug: NoeDemange/MolecularCagesGeneration
+  name: MolecularCagesGeneration
+  description: Computational Generation of Substrate-Specific Molecular Cages
+  keywords:
+  - cheminformatics
+  - enumeration
+  - experimental-algorithms
+  - geometric-algorithms
+  - molecular-cage
+  homepage: ''
+  language: C
+  stars: 0
+  updated: '2026-02-04T09:36:18Z'
+- slug: NoeDemange/Cage-Moleculaire
+  name: Cage-Moleculaire
+  description: Génération de guides de cages moléculaires
+  keywords:
+  - cage-moleculaire
+  - cheminformatics
+  - generation
+  - generation-algorithms
+  - in-silico
+  - molecular-cage
+  - specifique
+  - substrat-specifique
+  homepage: https://github.com/NoeDemange/Cage-Moleculaire
+  language: C
+  stars: 0
+  updated: '2024-06-05T06:53:31Z'
+- slug: NoeDemange/M2AmisProjet-GrapheDeCycles
+  name: M2AmisProjet-GrapheDeCycles
+  description: Comparaison des graphes de cycles des molécules par calcul de la similarité
+    par MCIS et par distance de Levenshtein
+  keywords:
+  - chemoinformatics
+  - levenshtein-distance
+  - mcis
+  - molecule
+  - similarity
+  homepage: ''
+  language: C
+  stars: 0
+  updated: '2024-04-05T09:45:35Z'
+- slug: NoeDemange/OrderedHeatMapAnalysis
+  name: OrderedHeatMapAnalysis
+  description: OrderedHeatMapAnalysis (OHMA) is a direct data analysis framework allowing
+    to simultaneously visualize and analyze the structure of complex datasets. An
+    optimized seriation of rows and columns of the input data table is performed,
+    resulting in a mapping of the whole dataset into an ordered heatmap.
+  keywords:
+  - analysis
+  - bi-seriation
+  - data
+  - dataanalysis
+  - heatmap
+  - r
+  - rstats
+  - seriation
+  - shiny
+  - shiny-apps
+  homepage: ''
+  language: R
+  stars: 0
+  updated: '2023-11-11T12:47:41Z'
+- slug: NoeDemange/NSPCAview
+  name: NSPCAview
+  description: 'App Shiny : Optimised matrix visualization of Non-negative Sparse
+    PCA components.'
+  keywords:
+  - nspca
+  - pca
+  - pca-analysis
+  - r
+  - rstats
+  - shiny
+  - shiny-apps
+  - visualization
+  homepage: ''
+  language: R
+  stars: 0
+  updated: '2023-01-20T17:06:41Z'
+- slug: NoeDemange/labelcolor
+  name: labelcolor
+  description: 'App Shiny : Scalable visualization of groups within a hierarchical
+    clustering from binary data matrix. '
+  keywords:
+  - color
+  - label
+  - phylogenetic-trees
+  - phylogeny
+  - r
+  - rstats
+  - shiny
+  homepage: ''
+  language: R
+  stars: 1
+  updated: '2023-01-20T17:00:48Z'
+- slug: NoeDemange/DSMapR
+  name: DSMapR
+  description: Package R d'analyse de structuration de matrice
+  keywords: []
+  homepage: ''
+  language: R
+  stars: 0
+  updated: '2022-09-10T12:57:29Z'
+- slug: NoeDemange/SeriClustR
+  name: SeriClustR
+  description: Package R permettant de trouver des clusters à partir d'une sériation
+  keywords: []
+  homepage: ''
+  language: C++
+  stars: 0
+  updated: '2022-09-10T12:57:57Z'

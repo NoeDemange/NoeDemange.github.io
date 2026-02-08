@@ -1,0 +1,50 @@
+name: Sync Repository Metadata
+
+on:
+  schedule:
+    - cron: "0 3 1 * *" # monthly on the 1st at 03:00 UTC
+  workflow_dispatch:
+  push:
+    paths:
+      - _data/repositories.yml
+      - bin/update_repositories.py
+      - .github/workflows/update-repositories.yml
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Update repository metadata
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_METADATA_TOKEN }}
+        run: python bin/update_repositories.py
+
+      - name: Commit changes
+        if: success()
+        run: |
+          if git diff --quiet _data/repositories.yml; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/repositories.yml
+          git commit -m "chore: refresh repository metadata"
+          git push

@@ -2,34 +2,12 @@
 
 import os
 import sys
-import yaml
 from datetime import datetime
+
+import yaml
 from scholarly import scholarly
 
-
-def load_scholar_user_id() -> str:
-    """Load the Google Scholar user ID from the configuration file."""
-    config_file = "_data/socials.yml"
-    if not os.path.exists(config_file):
-        print(
-            f"Configuration file {config_file} not found. Please ensure the file exists and contains your Google Scholar user ID."
-        )
-        sys.exit(1)
-    try:
-        with open(config_file, "r") as f:
-            config = yaml.safe_load(f)
-        scholar_user_id = config.get("scholar_userid")
-        if not scholar_user_id:
-            print(
-                "No 'scholar_userid' found in the configuration file. Please add 'scholar_userid' to _data/socials.yml."
-            )
-            sys.exit(1)
-        return scholar_user_id
-    except yaml.YAMLError as e:
-        print(
-            f"Error parsing YAML file {config_file}: {e}. Please check the file for correct YAML syntax."
-        )
-        sys.exit(1)
+from scholar_utils import load_scholar_user_id
 
 
 SCHOLAR_USER_ID: str = load_scholar_user_id()
@@ -40,6 +18,7 @@ def get_scholar_citations() -> None:
     """Fetch and update Google Scholar citation data."""
     print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
     today = datetime.now().strftime("%Y-%m-%d")
+    existing_data = None
 
     # Check if the output file was already updated today
     if os.path.exists(OUTPUT_FILE):
@@ -114,8 +93,14 @@ def get_scholar_citations() -> None:
         return
 
     try:
-        with open(OUTPUT_FILE, "w") as f:
-            yaml.dump(citation_data, f, width=1000, sort_keys=True)
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            yaml.dump(
+                citation_data,
+                f,
+                width=1000,
+                sort_keys=True,
+                allow_unicode=True,
+            )
         print(f"Citation data saved to {OUTPUT_FILE}")
     except Exception as e:
         print(

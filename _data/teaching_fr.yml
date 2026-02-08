@@ -1,0 +1,40 @@
+- title: Fondements de l'Informatique II - Mise en oeuvre Python
+  type: map
+  contents:
+    - name: Niveau / Année
+      value: "L1 informatique — 2026"
+    - name: Contenu du cours
+      value: ""
+    - name: Responsable
+      value: "Mustapha Lebbah"
+
+- title: Algorithmique et Fondements pour la Science des Données
+  type: map
+  contents:
+    - name: Niveau / Année
+      value: "L3 informatique — 2026"
+    - name: Contenu du cours
+      value: "Statistiques, Clustering, ACP"
+    - name: Responsable
+      value: "Sandrine Vial"
+
+- title: Modèles de Calcul et Complexité
+  type: map
+  contents:
+    - name: Niveau / Année
+      value: "L3 informatique — 2025"
+    - name: Contenu du cours
+      value: "Automate à pile, machine de Turing, autres modèles de calcul,
+décidabilité, réductions, classes de complexité"
+    - name: Responsable
+      value: "Yann Strozecki"
+
+- title: Structures de Données et Algorithmes
+  type: map
+  contents:
+    - name: Niveau / Année
+      value: "L2 informatique — 2024"
+    - name: Contenu du cours
+      value: "Récursivité, tris, piles/files, arbres, algortihme et compléxité"
+    - name: Responsable
+      value: "Sandrine Vial"

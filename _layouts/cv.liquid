@@ -1,7 +1,24 @@
 ---
 layout: default
 ---
-{% unless site.data.resume %}
+{% assign resume_entries = nil %}
+{% if page.cv_json %}
+  {% assign json_key = page.cv_json %}
+  {% if json_key contains '/' %}
+    {% assign json_key = json_key | split: '/' | last %}
+  {% endif %}
+  {% if json_key contains '.' %}
+    {% assign json_key = json_key | split: '.' | first %}
+  {% endif %}
+  {% assign json_candidate = site.data[json_key] %}
+  {% if json_candidate %}
+    {% assign resume_entries = json_candidate %}
+  {% endif %}
+{% elsif site.data.resume %}
+  {% assign resume_entries = site.data.resume %}
+{% endif %}
+
+{% unless resume_entries %}
   <div class="post">
     <header class="post-header">
       <h1 class="post-title">
@@ -28,7 +45,21 @@ layout: default
 
     <article>
       <div class="cv">
-        {% for entry in site.data.cv %}
+        {% assign cv_entries = site.data.cv %}
+        {% if page.cv_data %}
+          {% assign data_key = page.cv_data %}
+          {% if data_key contains '/' %}
+            {% assign data_key = data_key | split: '/' | last %}
+          {% endif %}
+          {% if data_key contains '.' %}
+            {% assign data_key = data_key | split: '.' | first %}
+          {% endif %}
+          {% assign candidate = site.data[data_key] %}
+          {% if candidate %}
+            {% assign cv_entries = candidate %}
+          {% endif %}
+        {% endif %}
+        {% for entry in cv_entries %}
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
@@ -77,9 +108,16 @@ layout: default
       {% endif %}
     </header>
 
+    {% assign resume_language = page.lang | default: site.lang %}
+    {% if page.url and page.url contains '/fr/' %}
+      {% assign resume_language = 'fr' %}
+    {% endif %}
+    {% assign resume_locale = resume_language | split: '-' | first %}
+    {% assign resume_titles = site.data.resume_section_titles[resume_locale] %}
+
     <article>
       <div class="cv">
-        {% for data in site.data.resume %}
+        {% for data in resume_entries %}
           {% if site.jsonresume and site.jsonresume.size > 0 %}
             {% unless site.jsonresume contains data[0] %}
               {% continue %}
@@ -87,12 +125,17 @@ layout: default
           {% endif %}
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
+          {% assign section_key = data[0] %}
+          {% assign section_label = section_key | capitalize %}
+          {% if resume_titles and resume_titles[section_key] %}
+            {% assign section_label = resume_titles[section_key] %}
+          {% endif %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            <h3 class="card-title font-weight-medium">{{ section_label }}</h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}
-                  {% include resume/basics.liquid %}
+                  {% include resume/basics.liquid resume_locale=resume_locale %}
                 {% when 'education' %}
                   {% include resume/education.liquid %}
                 {% when 'work' %}

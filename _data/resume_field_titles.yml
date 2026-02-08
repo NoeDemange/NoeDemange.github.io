@@ -1,0 +1,15 @@
+basics:
+  en:
+    name: Name
+    label: Title
+    email: Email
+    phone: Phone
+    url: Website
+    summary: Summary
+  fr:
+    name: Nom
+    label: Intitulé
+    email: Email
+    phone: Téléphone
+    url: Site web
+    summary: Résumé

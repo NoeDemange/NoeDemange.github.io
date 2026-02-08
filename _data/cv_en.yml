@@ -1,0 +1,176 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full name
+      value: Noé Demange
+    - name: Email
+      value: <a href="mailto:noe.demange@uvsq.fr">noe.demange@uvsq.fr</a>
+    - name: GitHub
+      value: <a href="https://github.com/NoeDemange">github.com/NoeDemange</a>
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Computer Science
+      institution: DAVID Lab., UVSQ / Université Paris-Saclay, Versailles, France
+      year: 2024 - present
+      description:
+        - Thesis topic: path generation for the synthesis of molecular cages.
+        - Supervisors: Yann Strozecki and Sandrine Vial.
+        - <a href="https://theses.fr/s402263">theses.fr/s402263</a>
+    - title: AMIS Master's Degree (Algorithms and Modeling at the Interface of Sciences)
+      institution: Université Paris-Saclay, Versailles, France
+      year: 2022 - 2024
+      description:
+        - Coursework in molecular modeling, graph theory, AI, combinatorial optimization, databases, cryptography, and networks.
+        - MixtAI scholarship, highest distinction.
+    - title: Double Bachelor's Degree in Biology & Computer Science
+      institution: Université de Versailles Saint-Quentin-en-Yvelines, Versailles, France
+      year: 2019 - 2022
+      description:
+        - Computer science: algorithms, C, Java, graph theory, databases, cryptography, networks.
+        - Biology: genetics, transcription/translation, phylogeny, sequencing, molecular biology.
+        - Honors: highest distinction.
+    - title: Scientific Baccalauréat (Life Sciences major)
+      institution: Lycée de la Haie Griselle, Gérardmer, France
+      year: 2019
+      description:
+        - Honors: highest distinction.
+
+- title: Academic Responsibilities
+  type: time_table
+  contents:
+    - title: PhD student representative
+      institution: DAVID Lab., UVSQ / Paris-Saclay
+      year: 2025 - present
+      description:
+        - Liaison between doctoral cohort and lab leadership; community building initiatives.
+
+- title: Employment and Internships
+  type: time_table
+  contents:
+    - title: Master's research internship
+      institution: Laboratoire DAVID, UVSQ, Versailles, France
+      year: April - September 2024
+      description:
+        - In silico generation of organic molecular cages and path construction between binding motifs.
+        - Algorithms, molecular modeling, C language.
+        - Supervisors: Yann Strozecki and Sandrine Vial.
+    - title: Academic tutoring, Saclay AI School
+      institution: UVSQ, Versailles, France
+      year: March - June 2024
+      description:
+        - Support for undergraduate computer science students.
+    - title: Research internship
+      institution: Laboratoire DAVID, UVSQ, Versailles, France
+      year: June - July 2023
+      description:
+        - Development of construction guides for molecular cages; improved an existing C program and implemented A*.
+        - Team-based project led by Yann Strozecki and Sandrine Vial.
+    - title: Student ambassador
+      institution: Université Paris-Saclay
+      year: 2022 - 2024
+      description:
+        - Promoted academic programs during orientation fairs; engagement with prospective students and families.
+    - title: Freelance research engineer (micro-entrepreneur status)
+      institution: CHCSC, UVSQ, Versailles, France
+      year: 2022
+      description:
+        - Built R data-analysis scripts, Shiny apps, and Docker workflows for a 96-hour mission.
+    - title: Research internship
+      institution: CHCSC, UVSQ, Versailles, France
+      year: June - August 2022
+      description:
+        - Designed a double-seriation data analysis method under the supervision of Guillaume Sapriel.
+    - title: Research internship
+      institution: Bioinformatics Workshop, ISYEB - MNHN, Paris, France
+      year: 2021 - 2022
+      description:
+        - Developed and applied a double-seriation approach to genomic datasets using R; supervised by Guillaume Sapriel.
+    - title: Student job
+      institution: Marcillat Cheese Factory, Corcieux, France
+      year: August 2020
+      description:
+        - Production line logistics and packaging teamwork under strict throughput constraints.
+
+- title: Research Activity
+  type: nested_list
+  contents:
+    - title: Posters (2025)
+      items:
+        - MaDICS Symposium – Generation of construction guides for molecular cages.
+        - Université Paris-Saclay Research Days – Generation of construction guides for molecular cages.
+    - title: Talks (2024)
+      items:
+        - DAVID Lab. PhD Students Day.
+
+- title: Academic Service
+  type: time_table
+  contents:
+    - title: Junior program committee member
+      institution: "Junior Conference on Informatics: Theory and Applications (JITA)"
+      year: 2025
+      description:
+        - Conference organization, call for papers, communications, and peer reviewing.
+
+- title: Supervision
+  type: time_table
+  contents:
+    - title: Master's project (M1) – Graph drawing
+      institution: UVSQ
+      year: 2026
+      description:
+        - Co-supervision with Chloé Godet.
+    - title: Undergraduate internships (L2) – Binding motif generation
+      institution: UVSQ
+      year: 2025
+      description:
+        - Co-supervision with Yann Strozecki and Sandrine Vial.
+    - title: Master's project (M1) – Distance computation in discretized 2D/3D spaces
+      institution: UVSQ
+      year: 2025
+      description:
+        - Co-supervision with Yann Strozecki.
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Foundations of Computer Science II – Python Programming
+      institution: UVSQ
+      year: 2026
+      description:
+        - Tutorial instruction, exam design, and project grading (27 h TD, Year 1, coordinator Mustapha Lebbah).
+    - title: Algorithms and Foundations for Data Science
+      institution: UVSQ
+      year: 2026
+      description:
+        - Tutorial instruction, assessment design, and lab grading (39 h TD, Year 3, coordinator Sandrine Vial).
+    - title: Models of Computation and Complexity
+      institution: UVSQ
+      year: 2025
+      description:
+        - Tutorials and project evaluation (27 h TD, Year 3, coordinator Yann Strozecki).
+    - title: Data Structures and Algorithms
+      institution: UVSQ
+      year: 2024
+      description:
+        - Tutorial instruction and exam proctoring (36 h TD, Year 2, coordinator Sandrine Vial).
+
+- title: Academic Projects
+  type: time_table
+  contents:
+    - title: Master's project (M2) – Molecular cycle graph comparisons
+      institution: AMIS Master's Program, UVSQ
+      year: October 2023 - February 2024
+      description:
+        - Built cycle graphs for molecules and compared them with MCIS (C, Python, R, team of four) under Franck Quessette and Sandrine Vial.
+    - title: Master's project (M1) – Organic molecular cage guides
+      institution: AMIS Master's Program, UVSQ
+      year: January - May 2023
+      description:
+        - Reused and extended prior thesis and internship code to design new path-building ideas (C, team of five) with Sandrine Vial.
+    - title: Bachelor's project (L3) – RNA structure prediction with pseudoknots
+      institution: Double Bachelor's Degree, UVSQ
+      year: January - May 2022
+      description:
+        - Implemented the algorithm from Rivas & Eddy (C, team of four) supervised by Sandrine Vial.

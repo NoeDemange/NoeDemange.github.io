@@ -1,0 +1,181 @@
+- title: Informations générales
+  type: map
+  contents:
+    - name: Nom complet
+      value: Noé Demange
+    - name: Email
+      value: <a href="mailto:noe.demange@uvsq.fr">noe.demange@uvsq.fr</a>
+    - name: GitHub
+      value: <a href="https://github.com/NoeDemange">github.com/NoeDemange</a>
+
+- title: Formations
+  type: time_table
+  contents:
+    - title: Doctorat en informatique
+      institution: Laboratoire DAVID, UVSQ / Université Paris-Saclay, Versailles, France
+      year: 2024 - présent
+      description:
+        - Sujet de thèse : génération de chemins pour la synthèse de cages moléculaires.
+        - Encadrants : Yann Strozecki et Sandrine Vial.
+        - <a href="https://theses.fr/s402263">theses.fr/s402263</a>
+    - title: Master AMIS (Algorithmique et Modélisation à l'Interface des Sciences)
+      institution: Université Paris-Saclay, Versailles, France
+      year: 2022 - 2024
+      description:
+        - Modélisation moléculaire, théorie des graphes, IA, optimisation combinatoire, bases de données, cryptographie et réseaux.
+        - Bourse MixtAI, mention très bien.
+    - title: Double licence Biologie & Informatique
+      institution: Université de Versailles Saint-Quentin-en-Yvelines, Versailles, France
+      year: 2019 - 2022
+      description:
+        - Informatique : algorithmique, C, Java, théorie des graphes, bases de données, cryptographie, réseaux.
+        - Biologie : génétique, transcription/traduction, phylogénie, séquençage, techniques de biologie moléculaire.
+        - Mention très bien.
+    - title: Baccalauréat scientifique (spécialité SVT)
+      institution: Lycée de la Haie Griselle, Gérardmer, France
+      year: 2019
+      description:
+        - Mention très bien.
+
+- title: Responsabilités académiques
+  type: time_table
+  contents:
+    - title: Représentant des doctorants
+      institution: Laboratoire DAVID, UVSQ / Paris-Saclay
+      year: 2025 - présent
+      description:
+        - Interface doctorants-direction et animation de la vie de laboratoire.
+
+- title: Expériences professionnelles et stages
+  type: time_table
+  contents:
+    - title: Stage de M2
+      institution: Laboratoire DAVID, UVSQ, Versailles, France
+      year: Avril - Septembre 2024
+      description:
+        - Génération de cages moléculaires organiques autour de molécules cibles et construction de chemins entre motifs liants.
+        - Algorithmique, modélisation moléculaire, langage C.
+        - Encadrants : Yann Strozecki et Sandrine Vial.
+    - title: Tutorat SaclAI-School
+      institution: UVSQ, Versailles, France
+      year: Mars - Juin 2024
+      description:
+        - Tutorat universitaire à destination des étudiants de licence informatique.
+    - title: Stage de recherche
+      institution: Laboratoire DAVID, UVSQ, Versailles, France
+      year: Juin - Juillet 2023
+      description:
+        - Guides de construction de cages moléculaires, amélioration d'un programme en C et implémentation de l'algorithme A*.
+        - Travail en équipe.
+        - Encadrants : Yann Strozecki et Sandrine Vial.
+    - title: Étudiant ambassadeur
+      institution: Université Paris-Saclay
+      year: 2022 - 2024
+      description:
+        - Présentation de l'offre de formation lors de salons d'orientation et échanges avec les futurs étudiants.
+    - title: Ingénierie de recherche (mission indépendante)
+      institution: CHCSC, UVSQ, Versailles, France
+      year: 2022
+      description:
+        - Développement de scripts R, d'applications Shiny et utilisation de Docker sur une mission de 96 h.
+    - title: Stage de recherche
+      institution: CHCSC, UVSQ, Versailles, France
+      year: Juin - Août 2022
+      description:
+        - Développement d'une méthode d'analyse de données par double sériation.
+        - Encadrant : Guillaume Sapriel.
+    - title: Stage de recherche
+      institution: Atelier de Bio-Informatique, ISYEB - MNHN, Paris, France
+      year: 2021 - 2022
+      description:
+        - Développement et application d'une méthode de double sériation sur des données génomiques en R.
+        - Encadrant : Guillaume Sapriel.
+    - title: Emploi étudiant
+      institution: Fromagerie Marcillat, Corcieux, France
+      year: Août 2020
+      description:
+        - Travail en usine sur le conditionnement, logistique et respect des cadences.
+
+- title: Activités de recherche
+  type: nested_list
+  contents:
+    - title: Posters 2025
+      items:
+        - Symposium MaDICS, génération de guides de construction de cages moléculaires.
+        - Journées de la recherche UPSaclay, génération de guides de construction de cages moléculaires.
+    - title: Présentations 2024
+      items:
+        - Journée des doctorants du laboratoire DAVID.
+
+- title: Engagement académique
+  type: time_table
+  contents:
+    - title: Comité junior JITA
+      institution: "Junior conference on Informatics: Theory and Applications"
+      year: 2025
+      description:
+        - Organisation, communication et relecture d'articles scientifiques.
+
+- title: Encadrements
+  type: time_table
+  contents:
+    - title: TER de M1 - Dessin de graphes
+      institution: Master AMIS, UVSQ
+      year: 2026
+      description:
+        - Encadrement de projet avec Chloé Godet.
+    - title: Stages de L2 - Génération de motifs liants
+      institution: UVSQ
+      year: 2025
+      description:
+        - Encadrement aux côtés de Yann Strozecki et Sandrine Vial.
+    - title: TER de M1 - Distance en espace discrétisé
+      institution: UVSQ
+      year: 2025
+      description:
+        - Encadrement avec Yann Strozecki.
+
+- title: Activités d'enseignement
+  type: time_table
+  contents:
+    - title: Fondements de l'Informatique II - Mise en oeuvre Python
+      institution: UVSQ
+      year: 2026
+      description:
+        - Encadrement d'un groupe de TD, conception des sujets de contrôle et évaluation de projets (27 h TD, L1, resp. Mustapha Lebbah).
+    - title: Algorithmique et Fondements pour la Science des Données
+      institution: UVSQ
+      year: 2026
+      description:
+        - Encadrement de TD, participation à l'élaboration des contrôles et évaluation de TP (39 h TD, L3, resp. Sandrine Vial).
+    - title: Modèles de Calcul et Complexité
+      institution: UVSQ
+      year: 2025
+      description:
+        - Encadrement de TD et évaluation de projets (27 h TD, L3, resp. Yann Strozecki).
+    - title: Structures de Données et Algorithmes
+      institution: UVSQ
+      year: 2024
+      description:
+        - Encadrement de TD et surveillance d'examen (36 h TD, L2, resp. Sandrine Vial).
+
+- title: Projets académiques
+  type: time_table
+  contents:
+    - title: Projet de M2 - Comparaison de graphes de cycles moléculaires
+      institution: Master AMIS, UVSQ
+      year: Octobre 2023 - Février 2024
+      description:
+        - Construction du graphe des cycles d'une molécule et comparaison par MCIS (C, Python, R, équipe de 4).
+        - Encadrants : Franck Quesette et Sandrine Vial.
+    - title: TER de M1 - Guides de construction de cages moléculaires
+      institution: Master AMIS, UVSQ
+      year: Janvier - Mai 2023
+      description:
+        - Reprise du code existant et proposition de stratégies de création de chemins entre motifs (langage C, groupe de 5).
+        - Encadrante : Sandrine Vial.
+    - title: Projet de L3 - Prédiction de structures ARN avec pseudonoeuds
+      institution: Double licence Biologie & Informatique, UVSQ
+      year: Janvier - Mai 2022
+      description:
+        - Implémentation de l'algorithme de Rivas & Eddy en C (groupe de 4) sous la direction de Sandrine Vial.
