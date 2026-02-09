@@ -10,6 +10,7 @@ github_repos:
 - NoeDemange/labelcolor
 - NoeDemange/DSMapR
 - NoeDemange/SeriClustR
+- NoeDemange/NoeDemange.github.io
 github_repos_metadata:
 - slug: NoeDemange/MolecularCagesGeneration
   name: MolecularCagesGeneration
@@ -124,3 +125,11 @@ github_repos_metadata:
   language: C++
   stars: 0
   updated: '2022-09-10T12:57:57Z'
+- slug: NoeDemange/NoeDemange.github.io
+  name: NoeDemange.github.io
+  description: ''
+  keywords: []
+  homepage: ''
+  language: HTML
+  stars: 0
+  updated: '2026-02-08T20:20:46Z'
