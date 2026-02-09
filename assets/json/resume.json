@@ -14,7 +14,7 @@
       "position": "PhD Student",
       "url": "https://www.uvsq.fr/david",
       "startDate": "2024-10-01",
-      "summary": "Doctoral research on path generation between molecular binding patterns to guide the synthesis of organic cages; supervised by Yann Strozecki and Sandrine Vial.",
+      "summary": "Doctoral research on path generation between molecular binding patterns to guide the synthesis of organic cages; supervised by <a href=\"https://yann-strozecki.github.io/\">Yann Strozecki</a> and <a href=\"https://www.david.uvsq.fr/mme-sandrine-vial\">Sandrine Vial</a>.",
       "highlights": []
     },
     {
@@ -165,6 +165,17 @@
           "publisher": "DAVID Laboratory",
           "releaseDate": "2024-11-01",
           "summary": "Talk presenting early progress on algorithms that support molecular cage synthesis."
+        }
+      ]
+    },
+    {
+      "title": "Supervision",
+      "entries": [
+        {
+          "name": "L2 internships",
+          "publisher": "Lysa Percevault and Elouan Cossec",
+          "releaseDate": "2025",
+          "summary": "Generated binding motifs for molecular cage construction. Supervisors: Noé Demange, Yann Strozecki, Sandrine Vial."
         }
       ]
     }

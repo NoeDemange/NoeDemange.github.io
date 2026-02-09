@@ -6,7 +6,7 @@
     - name: Course content
       value: 
     - name: Coordinator
-      value: Mustapha Lebbah
+      value: <a href="https://sites.google.com/site/lebbah/Home">Mustapha Lebbah</a>
 
 - title: Algorithms and Foundations for Data Science
   type: map
@@ -16,7 +16,7 @@
     - name: Course content
       value: Statistics, Clustering, PCA
     - name: Coordinator
-      value: Sandrine Vial
+      value: <a href="https://www.david.uvsq.fr/mme-sandrine-vial">Sandrine Vial</a>
 
 - title: Models of Computation and Complexity
   type: map
@@ -26,7 +26,7 @@
     - name: Course content
       value: Pushdown automaton, Turing machine, other computational models, decidability, reduction, complexity classes
     - name: Coordinator
-      value: Yann Strozecki
+      value: <a href="https://yann-strozecki.github.io/">Yann Strozecki</a>
 
 - title: Data Structures and Algorithms
   type: map
@@ -36,4 +36,14 @@
     - name: Course content
       value: Recursion, sorting, stacks/queues, trees, algorithms, and complexity
     - name: Coordinator
-      value: Sandrine Vial
+      value: <a href="https://www.david.uvsq.fr/mme-sandrine-vial">Sandrine Vial</a>
+
+- title: Supervised Research Project (TER)
+  type: nested_list
+  contents:
+    - title: "2026 · M1 TER — Graph Drawing"
+      items:
+        - "Supervisors: Noé Demange, Chloé Godet"
+    - title: "2025 · M1 TER — Distance computation in a discretized 2D or 3D space"
+      items:
+        - "Supervisors: Noé Demange, <a href=\"https://yann-strozecki.github.io/\">Yann Strozecki</a>"

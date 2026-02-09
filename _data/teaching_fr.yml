@@ -6,7 +6,7 @@
     - name: Contenu du cours
       value: ""
     - name: Responsable
-      value: "Mustapha Lebbah"
+      value: <a href="https://sites.google.com/site/lebbah/Home">Mustapha Lebbah</a>
 
 - title: Algorithmique et Fondements pour la Science des Données
   type: map
@@ -16,7 +16,7 @@
     - name: Contenu du cours
       value: "Statistiques, Clustering, ACP"
     - name: Responsable
-      value: "Sandrine Vial"
+      value: <a href="https://www.david.uvsq.fr/mme-sandrine-vial">Sandrine Vial</a>
 
 - title: Modèles de Calcul et Complexité
   type: map
@@ -27,7 +27,7 @@
       value: "Automate à pile, machine de Turing, autres modèles de calcul,
 décidabilité, réductions, classes de complexité"
     - name: Responsable
-      value: "Yann Strozecki"
+      value: <a href="https://yann-strozecki.github.io/">Yann Strozecki</a>
 
 - title: Structures de Données et Algorithmes
   type: map
@@ -37,4 +37,14 @@ décidabilité, réductions, classes de complexité"
     - name: Contenu du cours
       value: "Récursivité, tris, piles/files, arbres, algortihme et compléxité"
     - name: Responsable
-      value: "Sandrine Vial"
+      value: <a href="https://www.david.uvsq.fr/mme-sandrine-vial">Sandrine Vial</a>
+
+- title: Travail encadré de recherche (TER)
+  type: nested_list
+  contents:
+    - title: "2026 · TER de M1 — Dessin de Graphes"
+      items:
+        - "Encadrants : Noé Demange, Chloé Godet"
+    - title: "2025 · TER de M1 — Calcul d’une distance dans un espace 2D ou 3D discrétisé"
+      items:
+        - "Encadrants : Noé Demange, <a href=\"https://yann-strozecki.github.io/\">Yann Strozecki</a>"

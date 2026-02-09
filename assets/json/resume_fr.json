@@ -14,7 +14,7 @@
       "position": "Doctorant",
       "url": "https://www.uvsq.fr/david",
       "startDate": "2024-10-01",
-      "summary": "Recherche doctorale sur la génération de chemins entre motifs liants pour guider la synthèse de cages moléculaires, sous la direction de Yann Strozecki et Sandrine Vial.",
+      "summary": "Recherche doctorale sur la génération de chemins entre motifs liants pour guider la synthèse de cages moléculaires, sous la direction de <a href=\"https://yann-strozecki.github.io/\">Yann Strozecki</a> et <a href=\"https://www.david.uvsq.fr/mme-sandrine-vial\">Sandrine Vial</a>.",
       "highlights": []
     },
     {
@@ -165,6 +165,17 @@
           "publisher": "Laboratoire DAVID",
           "releaseDate": "2024-11-01",
           "summary": "Présentation orale sur les premiers résultats liés aux algorithmes pour la synthèse de cages."
+        }
+      ]
+    },
+    {
+      "title": "Encadrements",
+      "entries": [
+        {
+          "name": "Stages de L2",
+          "publisher": "Lysa Percevault et Elouan Cossec",
+          "releaseDate": "2025",
+          "summary": "Génération de motifs liants pour la construction de cages moléculaires. Encadrants : Noé Demange, Yann Strozecki, Sandrine Vial."
         }
       ]
     }
