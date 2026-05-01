@@ -11,6 +11,7 @@ github_repos:
 - NoeDemange/DSMapR
 - NoeDemange/SeriClustR
 - NoeDemange/NoeDemange.github.io
+- NoeDemange/InterconnectionTreesEnumeration
 github_repos_metadata:
 - slug: NoeDemange/MolecularCagesGeneration
   name: MolecularCagesGeneration
@@ -24,7 +25,7 @@ github_repos_metadata:
   homepage: ''
   language: C
   stars: 0
-  updated: '2026-02-04T09:36:18Z'
+  updated: '2026-04-23T10:19:59Z'
 - slug: NoeDemange/Cage-Moleculaire
   name: Cage-Moleculaire
   description: Génération de guides de cages moléculaires
@@ -132,4 +133,14 @@ github_repos_metadata:
   homepage: ''
   language: HTML
   stars: 0
-  updated: '2026-03-01T10:40:34Z'
+  updated: '2026-04-01T05:35:19Z'
+- slug: NoeDemange/InterconnectionTreesEnumeration
+  name: InterconnectionTreesEnumeration
+  description: Code for enumerating interconnection trees using ordered and non-ordered
+    strategies, with experiments measuring ordering quality (inversions, runs) on
+    synthetic and cheminformatics datasets.
+  keywords: []
+  homepage: ''
+  language: Python
+  stars: 0
+  updated: '2026-04-24T20:43:08Z'
