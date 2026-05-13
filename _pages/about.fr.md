@@ -27,4 +27,4 @@ latest_posts:
   enabled: false
 ---
 
-Je réalise actuellement une thèse sur la <a href="https://theses.fr/s402263">Génération de chemins pour la synthèse de cages moléculaires</a>.
+Je réalise actuellement une thèse sur la <a href="https://theses.fr/s402263">Génération de chemins pour la synthèse de cages moléculaires</a> sous la direction de <a href="https://yann-strozecki.github.io">Yann Strozecki</a> et <a href="https://www.david.uvsq.fr/mme-sandrine-vial">Sandrine Vial</a>. Mes recherches portent sur l'algorithmique et ses applications en chimie (chémoinformatique). Je développe des algorithmes et heuristiques pour la génération automatique de cages moléculaires adaptées à un substrat cible, en modélisant ces structures comme des graphes géométriques soumis à des contraintes chimiques. Cela inclut notamment l'étude de la complexité et l'énumération des arbres d'interconnexion, un problème combinatoire au cœur de l'assemblage de ces molécules.

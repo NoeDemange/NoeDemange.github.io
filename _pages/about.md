@@ -27,4 +27,4 @@ latest_posts:
   enabled: false
 ---
 
-Currently working on a thesis entitled <a href="https://theses.fr/s402263">Paths generation for the synthesis of molecular cages</a>.
+Currently working on a thesis entitled <a href="https://theses.fr/s402263">Paths generation for the synthesis of molecular cages</a> under the supervision of <a href="https://yann-strozecki.github.io">Yann Strozecki</a> and <a href="https://www.david.uvsq.fr/mme-sandrine-vial">Sandrine Vial</a>. My research focuses on algorithmics and its applications in chemistry (cheminformatics). I develop algorithms and heuristics for the automatic generation of molecular cages tailored to a target substrate, modelling these structures as geometric graphs subject to chemical constraints. This includes in particular the study of the complexity and enumeration of interconnection trees, a combinatorial problem at the heart of molecular cage assembly.
