@@ -4,7 +4,7 @@
     - name: Niveau / Année
       value: "L1 informatique — 2026"
     - name: Contenu du cours
-      value: ""
+      value: "Liste, dictionnaire, GUI, gestion de fichiers, table de hachage"
     - name: Responsable
       value: <a href="https://sites.google.com/site/lebbah/Home">Mustapha Lebbah</a>
 
@@ -42,9 +42,11 @@ décidabilité, réductions, classes de complexité"
 - title: Travail encadré de recherche (TER)
   type: nested_list
   contents:
-    - title: "2026 · TER de M1 — Dessin de Graphes"
+    - title: "2026 · Dessin de Graphes"
       items:
+        - "Etudiantes : Hajar Cherqi et He Yu"
         - "Encadrants : Noé Demange, Chloé Godet"
-    - title: "2025 · TER de M1 — Calcul d’une distance dans un espace 2D ou 3D discrétisé"
+    - title: "2025 · Recherche de chemins"
       items:
+        - "Etudiants : Raphael Dupuy, Quentin Soumet, Cyriac Thibaudeau et Théotime Turmel"
         - "Encadrants : Noé Demange, <a href=\"https://yann-strozecki.github.io/\">Yann Strozecki</a>"

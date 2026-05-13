@@ -4,7 +4,7 @@
     - name: Level / Year
       value: Undergraduate (L1) — 2026
     - name: Course content
-      value: 
+      value: List, dictionary, GUI, file management, hash table
     - name: Coordinator
       value: <a href="https://sites.google.com/site/lebbah/Home">Mustapha Lebbah</a>
 
@@ -41,9 +41,11 @@
 - title: Supervised Research Project (TER)
   type: nested_list
   contents:
-    - title: "2026 · M1 TER — Graph Drawing"
+    - title: "2026 · Graph Drawing"
       items:
+        - "Students: Hajar Cherqi and He Yu"
         - "Supervisors: Noé Demange, Chloé Godet"
-    - title: "2025 · M1 TER — Distance computation in a discretized 2D or 3D space"
+    - title: "2025 · Pathfinding"
       items:
+        - "Students: Raphael Dupuy, Quentin Soumet, Cyriac Thibaudeau and Théotime Turmel"
         - "Supervisors: Noé Demange, <a href=\"https://yann-strozecki.github.io/\">Yann Strozecki</a>"
