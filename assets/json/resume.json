@@ -78,14 +78,9 @@
     {
       "organization": "Laboratoire DAVID, UVSQ",
       "position": "PhD Student Representative",
-      "startDate": "2025-01-01",
-      "summary": ""
-    },
-    {
-      "organization": "Junior Conference on Informatics: Theory and Applications (JITA)",
-      "position": "Junior Program Committee Member",
-      "startDate": "2025-01-01",
-      "summary": "Managed calls for papers, communications, and peer reviews for the student-led conference."
+      "startDate": "2025-06-19",
+      "endDate": "",
+      "summary": "Participation in general assemblies and dissemination of information to PhD Students; assistance in drafting the laboratory’s new bylaws; and help in organizing a joint seminar for doctoral students from the DAVID laboratory and the CRYPTO team at the LMV "
     }
   ],
   "education": [
@@ -175,13 +170,40 @@
       ]
     },
     {
+      "title": "Volunteer",
+      "entries": [
+        {
+          "name": "Junior Conference on Informatics: Theory and Applications (JITA 2025)",
+          "releaseDate": "2025",
+          "summary": "Junior Program Committee Member: Managed calls for papers, communications, and peer reviews for the student-led conference."
+        }
+      ]
+    },
+    {
       "title": "Supervision",
       "entries": [
         {
-          "name": "L2 internships",
-          "publisher": "Lysa Percevault and Elouan Cossec",
+          "name": "Elouan Cossec and Lysa Percevault",
+          "publisher": "L2 internships",
           "releaseDate": "2025",
           "summary": "Generated binding motifs for molecular cage construction. Supervisors: Noé Demange, Yann Strozecki, Sandrine Vial."
+        },
+        {
+          "name": "Lysa Percevault",
+          "publisher": "L3 internships",
+          "releaseDate": "2026",
+          "summary": "Algorithms and implementation to optimize path generation for molecular cage construction. Supervisors: Noé Demange, Yann Strozecki, Sandrine Vial."
+        },
+        {
+          "name": "Nilsea Hanna",
+          "publisher": "L3 internships",
+          "releaseDate": "2026",
+          "summary": "Algorithms and implementation to guide path generation for molecular cage construction. Supervisors: Noé Demange, Yann Strozecki, Sandrine Vial."
+        },{
+          "name": "Elouan Cossec",
+          "publisher": "L3 internships",
+          "releaseDate": "2026",
+          "summary": "Creation of an interface and quality criteria for the construction of molecular cages. Supervisors: Noé Demange, Yann Strozecki, Sandrine Vial."
         }
       ]
     }

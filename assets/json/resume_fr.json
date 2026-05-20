@@ -78,14 +78,9 @@
     {
       "organization": "Laboratoire DAVID, UVSQ",
       "position": "Représentant des doctorants",
-      "startDate": "2025-01-01",
-      "summary": ""
-    },
-    {
-      "organization": "Junior Conference on Informatics: Theory and Applications (JITA)",
-      "position": "Membre du comité junior",
-      "startDate": "2025-01-01",
-      "summary": "Organisation de la conférence étudiante, communication et relectures scientifiques."
+      "startDate": "2025-06-19",
+      "endDate": "",
+      "summary": "Participation aux assemblées générales et diffusion d’informations aux doctorants; participation à la rédaction des nouveaux statuts du laboratoire; et aide à l'organisation d'un séminaire commun entre les doctorants du laboratoire DAVID et de l'équipe CRYPTO du LMV"
     }
   ],
   "education": [
@@ -175,13 +170,40 @@
       ]
     },
     {
+      "title": "Engagements",
+      "entries": [
+        {
+          "name": "Junior Conference on Informatics: Theory and Applications (JITA 2025)",
+          "releaseDate": "2025",
+          "summary": "Membre du comité junior : Organisatin de l'appel à soumissions, communications et examination des soumissions."
+        }
+      ]
+    },
+    {
       "title": "Encadrements",
       "entries": [
         {
-          "name": "Stages de L2",
-          "publisher": "Lysa Percevault et Elouan Cossec",
+          "name": "Elouan Cossec et Lysa Percevault",
+          "publisher": "Stages de L2",
           "releaseDate": "2025",
-          "summary": "Génération de motifs liants pour la construction de cages moléculaires. Encadrants : Noé Demange, Yann Strozecki, Sandrine Vial."
+          "summary": "Génération de motifs liants pour la construction de cages moléculaires. Encadrants: Noé Demange, Yann Strozecki, Sandrine Vial."
+        },
+        {
+          "name": "Lysa Percevault",
+          "publisher": "Stage de L3",
+          "releaseDate": "2026",
+          "summary": "Algorithmes et implémentation pour optimiser la génération de chemin pour la construction de cage moléculaire. Encadrants: Noé Demange, Yann Strozecki, Sandrine Vial."
+        },
+        {
+          "name": "Nilsea Hanna",
+          "publisher": "Stage de L3",
+          "releaseDate": "2026",
+          "summary": "Algorithmes et implémentation pour guider la génération de chemin pour la construction de cage moléculaire. Encadrants: Noé Demange, Yann Strozecki, Sandrine Vial."
+        },{
+          "name": "Elouan Cossec",
+          "publisher": "Stage de L3",
+          "releaseDate": "2026",
+          "summary": "Création d’une interface et de critère de qualité pour la construction de cage moléculaire. Encadrants: Noé Demange, Yann Strozecki, Sandrine Vial."
         }
       ]
     }
