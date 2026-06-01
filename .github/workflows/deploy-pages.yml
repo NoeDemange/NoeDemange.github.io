@@ -6,7 +6,6 @@ on:
   workflow_run:
     workflows:
       - Sync Scholar Publications
-      - Sync Scholar Citations
       - Sync Repository Metadata
     types:
       - completed
