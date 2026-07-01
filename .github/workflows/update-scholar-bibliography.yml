@@ -35,7 +35,13 @@ jobs:
       - name: Refresh bibliography from Google Scholar
         env:
           SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
-        run: python bin/update_scholar_bibliography.py
+        run: |
+          echo "Starting Scholar refresh at $(date -u +'%Y-%m-%d %H:%M:%S') UTC"
+          start_time=$(date +%s)
+          timeout 15m python bin/update_scholar_bibliography.py
+          end_time=$(date +%s)
+          elapsed=$((end_time - start_time))
+          echo "Scholar refresh finished in ${elapsed}s"
 
       - name: Commit changes
         run: |
