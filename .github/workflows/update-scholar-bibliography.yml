@@ -33,6 +33,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Refresh bibliography from Google Scholar
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
         run: python bin/update_scholar_bibliography.py
 
       - name: Commit changes

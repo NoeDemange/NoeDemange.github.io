@@ -45,30 +45,17 @@ def configure_scholarly_session() -> None:
     pg = ProxyGenerator()
 
     serpapi_key = os.environ.get("SERPAPI_API_KEY") or os.environ.get("SERPAPI_KEY")
-    ci_env = os.environ.get("CI") == "true"
     if serpapi_key:
         try:
             if pg.SerpAPI(serpapi_key):
                 scholarly.use_proxy(pg)
                 print("Using SerpAPI for Google Scholar requests.")
                 return
-            print("Warning: Unable to initialize SerpAPI proxy. Falling back to free proxies.")
+            print("Warning: Unable to initialize SerpAPI proxy. Falling back to direct Google Scholar access.")
         except Exception as exc:  # noqa: BLE001
-            print(f"Warning: SerpAPI proxy configuration failed: {exc}. Falling back to free proxies.")
+            print(f"Warning: SerpAPI proxy configuration failed: {exc}. Falling back to direct Google Scholar access.")
 
-    if not ci_env:
-        print("CI environment not detected; using direct Google Scholar connection.")
-        return
-
-    try:
-        if pg.FreeProxies():
-            scholarly.use_proxy(pg)
-            print("Using rotating free proxies for Google Scholar requests.")
-            return
-        print("Warning: Unable to obtain a free proxy. Proceeding without proxy support.")
-    except Exception as exc:  # noqa: BLE001
-        print(f"Warning: Free proxy configuration failed: {exc}. Proceeding without proxy support.")
-
+    print("Using direct Google Scholar connection.")
     print(
-        "Continuing without any Google Scholar proxy. Set SERPAPI_API_KEY as a repository secret if remote runs keep failing."
+        "Set SERPAPI_API_KEY as a repository secret if remote runs keep failing or Scholar starts rate-limiting direct requests."
     )

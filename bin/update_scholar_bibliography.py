@@ -29,19 +29,21 @@ def fetch_publications(scholar_id: str) -> List[Dict[str, object]]:
         author = scholarly.fill(author, sections=["publications"])
     except Exception as exc:  # noqa: BLE001
         print(f"Error fetching author data: {exc}")
-        sys.exit(1)
+        return []
+
+    raw_publications = list(author.get("publications", []))
+    if not raw_publications:
+        print("No publications listed on the Google Scholar profile.")
+        return []
 
     publications = []
-    for pub in author.get("publications", []):
+    for pub in raw_publications:
         try:
             publications.append(scholarly.fill(pub))
         except Exception as exc:  # noqa: BLE001
             title = pub.get("bib", {}).get("title", "Unknown title")
             print(f"Warning: Could not fetch full data for '{title}': {exc}")
-
-    if not publications:
-        print("No publications retrieved from Google Scholar.")
-        sys.exit(1)
+            publications.append(pub)
 
     return publications
 
@@ -184,6 +186,10 @@ def main() -> None:
     configure_scholarly_session()
     scholar_id = load_scholar_user_id()
     publications = fetch_publications(scholar_id)
+
+    if not publications:
+        print("No usable publications retrieved from Google Scholar; leaving bibliography unchanged.")
+        return
 
     manual_keys, manual_text = load_manual_overrides()
     if manual_keys:
