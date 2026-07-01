@@ -316,7 +316,7 @@ You can create a people page if you want to feature more than one person. Each p
 
 ### Publications
 
-If you keep Google Scholar up to date, run `python bin/update_scholar_bibliography.py` to regenerate `_bibliography/papers.bib` directly from your Scholar profile (the script uses the `scholar_userid` defined in `_data/socials.yml`). Keep any hand-tuned entries or field overrides in `_bibliography/manual_overrides.bib`; each time the script runs it merges that file into `papers.bib`, overriding matching keys and appending any manual-only entries so Jekyll can continue reading a single bibliography. Remember to rerun the script after editing `manual_overrides.bib` to propagate your changes.
+Add publications manually by editing [_bibliography/papers.bib](_bibliography/papers.bib).
 
 Your publications' page is generated automatically from your BibTex bibliography. Simply edit [_bibliography/papers.bib](_bibliography/papers.bib). You can also add new `*.bib` files and customize the look of your publications however you like by editing [_pages/publications.md](_pages/publications.md). By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [_config.yml](_config.yml) file.
 
