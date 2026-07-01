@@ -15,8 +15,11 @@ profile:
   #   <p>45 Avenue des États-Unis</p>
   #   <p>78000 Versailles, France</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers_title: Selected publications
 social: true # includes social icons at the bottom of the page
+contact_note: >
+  The best way to reach me is through email. I am always open to discussing potential collaborations, research opportunities, or any inquiries related to my work. Your message is important to me, and I will do my best to respond promptly.
 
 announcements:
   enabled: false # includes a list of news items

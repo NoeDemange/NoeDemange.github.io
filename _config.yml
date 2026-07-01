@@ -6,7 +6,8 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Noé
 middle_name:
 last_name: Demange
-contact_note: 
+contact_note: >
+  The best way to reach me is through email. I am always open to discussing potential collaborations, research opportunities, or any inquiries related to my work. Your message is important to me, and I will do my best to respond promptly.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >

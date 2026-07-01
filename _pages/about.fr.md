@@ -15,8 +15,11 @@ profile:
   #   <p>45 avenue des États-Unis</p>
   #   <p>78000 Versailles, France</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers_title: Publications sélectionnées
 social: true # includes social icons at the bottom of the page
+contact_note: >
+  Le meilleur moyen de me contacter est par e-mail. Je suis toujours ouvert aux collaborations, aux opportunités de recherche et à toute question liée à mon travail. Votre message compte pour moi et je ferai de mon mieux pour vous répondre rapidement.
 
 announcements:
   enabled: false # includes a list of news items
