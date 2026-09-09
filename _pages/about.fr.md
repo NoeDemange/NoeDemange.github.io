@@ -22,7 +22,7 @@ contact_note: >
   Le meilleur moyen de me contacter est par e-mail. Je suis toujours ouvert aux collaborations, aux opportunités de recherche et à toute question liée à mon travail. Votre message compte pour moi et je ferai de mon mieux pour vous répondre rapidement.
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 

@@ -22,7 +22,7 @@ contact_note: >
   The best way to reach me is through email. I am always open to discussing potential collaborations, research opportunities, or any inquiries related to my work. Your message is important to me, and I will do my best to respond promptly.
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
