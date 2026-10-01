@@ -133,7 +133,7 @@ github_repos_metadata:
   homepage: https://noedemange.github.io/
   language: HTML
   stars: 0
-  updated: '2026-08-01T05:52:00Z'
+  updated: '2026-09-09T15:04:35Z'
 - slug: NoeDemange/InterconnectionTreesEnumeration
   name: InterconnectionTreesEnumeration
   description: Code for enumerating interconnection trees using ordered and non-ordered
